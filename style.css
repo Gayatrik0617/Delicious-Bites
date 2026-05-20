@@ -1,0 +1,293 @@
+/* General Styles */
+
+html{
+    scroll-behavior: smooth;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 1, 6, 0.938);
+    color: #fff;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    min-height: 80px;
+    font-size: 22px;
+    font-family:'Georgia', 'Times New Roman', Times, serif;
+}
+
+.navbar-brand{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.nav-link{
+    color: #fff !important;
+}
+
+.nav-link:hover{
+    color: #ffd6d6 !important;
+}
+
+/* ================= HERO SECTION ================= */
+
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 120px 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.heading{
+    background-color: rgba(55, 10, 9, 0.671);
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 900px;
+}
+
+.hero h1 {
+    font-size: 4.5rem;
+    color: rgb(248, 244, 244);
+    font-weight: bolder;
+    font-family:'Georgia', 'Times New Roman', Times, serif;
+}
+
+.hero p {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family:'Georgia', 'Times New Roman', Times, serif;
+}
+
+.hero .btn {
+    margin-top: 15px;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    background-color: rgb(218, 29, 29);
+    border: none;
+    font-weight: bold;
+    font-family:'Georgia', 'Times New Roman', Times, serif;
+}
+
+.hero .btn:hover{
+    background-color: rgb(224, 57, 57);
+}
+
+/* ================= MENU ================= */
+
+#menu .card {
+    transition: transform 0.3s ease-in-out;
+    border: none;
+    height: 100%;
+}
+
+#menu .card:hover {
+    transform: scale(1.03);
+    background-color: #c63030f1;
+    color: #fff;
+    cursor: pointer;
+}
+
+.card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-title{
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.card-text{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+
+/* ================= ABOUT ================= */
+
+#about {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#about p{
+    font-family:'Georgia', 'Times New Roman', Times, serif;
+}
+
+.lead{
+    text-align: justify;
+    font-size: 1.3rem;
+}
+
+/* ================= REVIEWS ================= */
+
+#reviews .card {
+    border: none;
+    background-color: #fff;
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+
+#reviews .card:hover {
+    transform: scale(1.03);
+}
+
+#reviews .card-text{
+    font-size: 18px;
+}
+
+#reviews h6 {
+    font-weight: bold;
+    color: #d63333;
+}
+
+/* ================= CONTACT ================= */
+
+#contact .form-control {
+    border-radius: 10px;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+    background-color: #1c1c1c;
+    color: white;
+    margin-top: 50px;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+}
+
+.footer-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.footer-link {
+    color: #bbb;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #ff5c5c;
+    text-decoration: underline;
+}
+
+.footer p {
+    font-size: 18px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px){
+
+    .navbar{
+        min-height: auto;
+        padding: 10px 0;
+    }
+
+    .navbar-brand{
+        font-size: 22px;
+    }
+
+    .navbar-nav{
+        text-align: center;
+        background-color: #dc3545;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    .nav-link{
+        font-size: 18px;
+    }
+
+    .hero{
+        min-height: auto;
+        padding: 140px 20px 80px;
+    }
+
+    .heading{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .hero h1{
+        font-size: 2.3rem;
+    }
+
+    .hero p{
+        font-size: 1.1rem;
+    }
+
+    .hero .btn{
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .card img{
+        height: 220px;
+    }
+
+    .card-title{
+        font-size: 22px;
+    }
+
+    .card-text{
+        font-size: 16px;
+    }
+
+    #about{
+        padding: 30px 15px;
+    }
+
+    #about h2{
+        font-size: 2rem;
+    }
+
+    .lead{
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    #reviews .card{
+        padding: 20px !important;
+    }
+
+    #reviews .card-text{
+        font-size: 16px;
+    }
+
+    .form-label{
+        font-size: 18px !important;
+    }
+
+    .footer{
+        text-align: center;
+    }
+
+    .footer-title{
+        font-size: 22px;
+    }
+
+    .footer p,
+    .footer-link{
+        font-size: 16px;
+    }
+}
